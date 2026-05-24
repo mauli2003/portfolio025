@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Landscapes</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="gallery-nav">
+
+    <div class="gallery-logo">
+        PORTFOLIO
+    </div>
+
+    <ul class="gallery-menu">
+
+        <li>
+            <a href="portfolio.html">Home</a>
+        </li>
+
+        <li class="gallery-dropdown">
+
+            <a href="#">Work ▾</a>
+
+            <ul class="gallery-dropdown-menu">
+
+                <li><a href="landscapes.html">Landscapes</a></li>
+
+                <li><a href="portraits.html">Portraits</a></li>
+
+                <li><a href="blackwhite.html">Black & White</a></li>
+
+                <li><a href="travel.html">Travel</a></li>
+
+                <li><a href="street.html">Street Stories</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="gallery-hero">
+
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639492/featured2_rh76fp.mov" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>TRAVELS</h1>
+
+        <p>
+            Stories from the roads,
+            to fragments of My Travel.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery-grid">
+
+    <div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639568/travel2_xxamii.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639492/featured2_rh76fp.mov" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639586/travel1_hk2jbw.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639041/featured4_daoq3h.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639299/travel3_aondeq.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639314/travel4_dd1i3j.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639577/travel5_shnhvt.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639334/travel6_kndwuy.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<div class="gallery-item">
+
+    <video class="gallery-video" controls playsinline>
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639364/travel8_ny2aqc.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+
+
+<script>
+
+    const allVideos = document.querySelectorAll(".gallery-video");
+
+allVideos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+        allVideos.forEach((otherVideo) => {
+
+            if(otherVideo !== video){
+
+                otherVideo.pause();
+
+            }
+
+        });
+
+    });
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>

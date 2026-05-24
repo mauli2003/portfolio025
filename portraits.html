@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Portraits</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="gallery-nav">
+
+    <div class="gallery-logo">PORTFOLIO</div>
+
+    <ul class="gallery-menu">
+
+        <li><a href="portfolio.html">Home</a></li>
+
+        <li class="gallery-dropdown">
+
+            <a href="#">Work ▾</a>
+
+            <ul class="gallery-dropdown-menu">
+
+                <li><a href="landscapes.html">Landscapes</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="bw.html">Black & White</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="street.html">Street Stories</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="portrait-hero">
+
+    <img src="portrait11.jpg"
+    class="portrait-hero-image">
+
+    <div class="portrait-overlay"></div>
+
+    <div class="portrait-content">
+
+        <h1>PORTRAITS</h1>
+
+        <p>
+            Faces, emotions and untold stories
+            framed in timeless elegance.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="portrait-gallery">
+
+    <!-- VIDEO 1 -->
+
+    <div class="portrait-item video-large">
+
+        <video controls playsinline>
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639103/portrait2_rtfloc.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <!-- IMAGE -->
+
+    <div class="portrait-item tall">
+        <img src="portrait1.jpg">
+    </div>
+
+    <div class="portrait-item">
+        <img src="portrait4 (2).jpeg">
+    </div>
+
+    <div class="portrait-item wide">
+        <img src="portrait5.jpg">
+    </div>
+
+    <div class="portrait-item tall">
+        <img src="portrait6.jpg">
+    </div>
+
+    <!-- VIDEO 2 -->
+
+    <div class="portrait-item video-wide">
+
+        <video controls playsinline>
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639071/portrait3_fgxjmb.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <div class="portrait-item">
+        <img src="portrait11.jpg">
+    </div>
+
+    <div class="portrait-item">
+        <img src="portrait8.jpeg">
+    </div>
+
+    <div class="portrait-item tall">
+        <img src="portrait7.jpg">
+    </div>
+
+    <div class="portrait-item wide">
+        <img src="portrait10.jpg">
+    </div>
+
+    <div class="portrait-item">
+        <img src="portrait9.jpeg">
+    </div>
+
+    <div class="portrait-item tall">
+        <img src="portrait12.jpg">
+    </div>
+
+     <div class="portrait-item tall">
+        <img src="portraaitframebg.jpg">
+    </div>
+
+    <div class="portrait-item tall">
+        <img src="portrait14.jpeg">
+    </div>
+
+    <div class="portrait-item tall">
+        <img src="portrait15.jpg">
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+    const allVideos = document.querySelectorAll(".gallery-video");
+
+allVideos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+        allVideos.forEach((otherVideo) => {
+
+            if(otherVideo !== video){
+
+                otherVideo.pause();
+
+            }
+
+        });
+
+    });
+
+});
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1097 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:'Poppins', sans-serif;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.gallery-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    padding:22px 7%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:999;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(14px);
+}
+
+.gallery-logo{
+    font-size:20px;
+    letter-spacing:5px;
+    font-weight:600;
+}
+
+.gallery-menu{
+    list-style:none;
+    display:flex;
+    gap:45px;
+}
+
+.gallery-menu li{
+    position:relative;
+}
+
+.gallery-menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+.gallery-menu li a:hover{
+    opacity:0.7;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.gallery-dropdown-menu{
+    position:absolute;
+
+    top:38px;
+    right:0;
+
+    min-width:220px;
+
+    background:rgba(15,15,15,0.96);
+
+    border:1px solid rgba(255,255,255,0.06);
+
+    border-radius:18px;
+
+    padding:15px;
+
+    list-style:none;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(10px);
+
+    transition:0.35s ease;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.45);
+}
+
+.gallery-dropdown:hover .gallery-dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.gallery-dropdown-menu li{
+    margin:10px 0;
+}
+
+.gallery-dropdown-menu li a{
+    display:block;
+
+    padding:12px 16px;
+
+    border-radius:12px;
+
+    transition:0.3s;
+}
+
+.gallery-dropdown-menu li a:hover{
+    background:rgba(255,255,255,0.07);
+
+    padding-left:24px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.gallery-hero{
+    position:relative;
+
+    height:100vh;
+
+    background:url("images/land1.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.7)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:90px;
+
+    letter-spacing:14px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+}
+
+.hero-content p{
+    font-size:18px;
+
+    line-height:1.8;
+
+    opacity:0.85;
+
+    max-width:700px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid{
+    columns:3 300px;
+
+    column-gap:18px;
+
+    padding:90px 7%;
+}
+
+.gallery-item{
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    margin-bottom:18px;
+
+    break-inside:avoid;
+}
+
+.gallery-item img{
+    width:100%;
+
+    display:block;
+
+    border-radius:24px;
+
+    transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+
+    filter:brightness(0.85);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .gallery-nav{
+        padding:18px 5%;
+    }
+
+    .gallery-menu{
+        gap:20px;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+
+        letter-spacing:6px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .gallery-grid{
+        padding:60px 5%;
+    }
+
+    .gallery-dropdown-menu{
+        right:-20px;
+    }
+}
+
+/* =========================================
+   LANDSCAPES / PORTRAITS / TRAVEL PAGES
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+body.gallery-page {
+
+    margin: 0;
+    padding: 0;
+    background: #0b0b0b;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* NAVBAR */
+
+.gallery-nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(12px);
+    z-index: 999;
+
+}
+
+.gallery-logo {
+
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: #f3e7d3;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+
+}
+
+.gallery-menu {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.gallery-menu li {
+
+    position: relative;
+
+}
+
+.gallery-menu li a {
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+
+.gallery-menu li a:hover {
+
+    color: #d4b483;
+
+}
+
+/* DROPDOWN */
+
+.gallery-dropdown-menu {
+
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: rgba(15,15,15,0.96);
+    padding: 15px 0;
+    min-width: 210px;
+    border-radius: 16px;
+    display: none;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+.gallery-dropdown:hover .gallery-dropdown-menu {
+
+    display: block;
+
+}
+
+.gallery-dropdown-menu li {
+
+    list-style: none;
+
+}
+
+.gallery-dropdown-menu li a {
+
+    display: block;
+    padding: 12px 24px;
+    color: #eee;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+}
+
+.gallery-dropdown-menu li a:hover {
+
+    background: rgba(255,255,255,0.05);
+    color: #d4b483;
+
+}
+
+/* HERO SECTION */
+
+.gallery-hero {
+
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.75)),
+    url("images/land1.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gallery-hero h1 {
+
+    font-size: 95px;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 10px;
+    font-weight: 600;
+
+    background: linear-gradient(to right, #f8e7c8, #d4b483, #fff3dc);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.gallery-hero p {
+
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #ddd;
+    letter-spacing: 1px;
+
+}
+
+/* GALLERY */
+
+.masonry-gallery {
+
+    column-count: 3;
+    column-gap: 18px;
+    padding: 90px 7%;
+
+}
+
+.gallery-item {
+
+    margin-bottom: 18px;
+    overflow: hidden;
+    border-radius: 18px;
+    break-inside: avoid;
+    position: relative;
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    transition: 0.5s ease;
+
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.05);
+    filter: brightness(0.8);
+
+}
+
+/* GLOW EFFECT */
+
+.gallery-item::after {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    background: linear-gradient(
+    to top,
+    rgba(212,180,131,0.25),
+    transparent);
+
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.gallery-item:hover::after {
+
+    opacity: 1;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 992px){
+
+    .masonry-gallery {
+
+        column-count: 2;
+
+    }
+
+    .gallery-hero h1 {
+
+        font-size: 60px;
+
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .gallery-nav {
+
+        padding: 18px 5%;
+
+    }
+
+    .gallery-menu {
+
+        gap: 20px;
+
+    }
+
+    .gallery-hero {
+
+        height: 60vh;
+
+    }
+
+    .gallery-hero h1 {
+
+        font-size: 42px;
+        letter-spacing: 5px;
+
+    }
+
+    .gallery-hero p {
+
+        font-size: 15px;
+
+    }
+
+    .masonry-gallery {
+
+        column-count: 1;
+        padding: 60px 5%;
+
+    }
+
+}
+
+/* FIX DROPDOWN HOVER ISSUE */
+
+.gallery-dropdown {
+
+    position: relative;
+    padding-bottom: 15px;
+
+}
+
+.gallery-dropdown-menu {
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0;
+    display: none;
+
+}
+
+/* KEEP DROPDOWN OPEN */
+
+.gallery-dropdown:hover .gallery-dropdown-menu {
+
+    display: block;
+
+}
+
+/* EXTRA INVISIBLE HOVER AREA */
+
+.gallery-dropdown::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    height: 20px;
+
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+/* HERO TITLE */
+
+.gallery-hero h1 {
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.2s ease;
+
+}
+
+.hero-title-show {
+
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+
+/* HERO TEXT */
+
+.gallery-hero p {
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1.5s ease;
+
+}
+
+.hero-text-show {
+
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+
+/* GALLERY ITEMS */
+
+/* .gallery-item {
+
+    opacity: 0;
+    transform: translateY(80px) scale(0.95);
+    transition: 1s ease;
+
+}
+
+.show-gallery-item {
+
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+
+} */
+
+/* NAVBAR SCROLL EFFECT */
+
+.nav-scrolled {
+
+    background: rgba(0,0,0,0.82) !important;
+    backdrop-filter: blur(18px);
+
+}
+
+/* SMOOTH PAGE */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+/* IMAGE FLOAT EFFECT */
+
+/* .gallery-item img {
+
+    animation: floatImage 6s ease-in-out infinite;
+
+}
+
+@keyframes floatImage {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-6px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+} */
+
+/* HERO GLOW */
+
+.gallery-hero h1 {
+
+    text-shadow:
+    0 0 10px rgba(212,180,131,0.4),
+    0 0 30px rgba(212,180,131,0.2);
+
+}
+
+/* VIDEO */
+
+.gallery-video {
+
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+    background: black;
+
+}
+
+/* GALLERY ITEM */
+
+.gallery-item {
+
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+/* FIX VIDEO CLICK ISSUE */
+
+.gallery-item::before,
+.gallery-item::after {
+
+    pointer-events: none;
+
+}
+
+/* VIDEO */
+
+.gallery-video {
+
+    position: relative;
+    z-index: 5;
+
+}
+
+/* HERO SECTION */
+
+.gallery-hero{
+    position: relative;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* BACKGROUND VIDEO */
+
+.hero-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* DARK OVERLAY */
+
+.hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 2;
+}
+
+/* TEXT */
+
+.hero-content{
+    position: relative;
+    z-index: 3;
+    animation: fadeUp 1.5s ease;
+}
+
+.hero-content h1{
+    font-size: 5rem;
+    color: #ffffff;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p{
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    max-width: 650px;
+    line-height: 1.8;
+    margin: auto;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PORTRAIT HERO */
+
+.portrait-hero{
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait-hero-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portrait-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+}
+
+
+/* GALLERY */
+
+.portrait-gallery{
+    columns: 3 300px;
+    column-gap: 18px;
+    padding: 80px 6%;
+    background: #0d0d0d;
+}
+
+.portrait-item{
+    break-inside: avoid;
+    margin-bottom: 18px;
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+}
+
+.portrait-item img,
+.portrait-item video{
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.portrait-item:hover img,
+.portrait-item:hover video{
+    transform: scale(1.03);
+}
+
+/* VIDEO SIZE */
+
+.video-large video{
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.video-wide video{
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/* TALL IMAGES */
+
+.tall img{
+    min-height: 500px;
+    object-fit: cover;
+}
+
+/* WIDE IMAGES */
+
+.wide img{
+    min-height: 250px;
+    object-fit: cover;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .portrait-content h1{
+        font-size: 3rem;
+    }
+
+    .portrait-gallery{
+        padding: 40px 20px;
+    }
+
+}
+
+/* PORTRAIT TITLE ANIMATION */
+
+
+
+/* SUBTEXT */
+
+
+
+/* HERO OVERLAY */
+
+.portrait-overlay{
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.65)
+    );
+}
+
+/* HERO IMAGE EFFECT */
+
+.portrait-hero-image{
+    filter: brightness(70%);
+    transform: scale(1.03);
+}
+
+/* GALLERY BACKGROUND */
+
+.portrait-gallery{
+    background: #080808;
+}
+
+/* HOVER EFFECT */
+
+.portrait-item img,
+.portrait-item video{
+    transition: transform 0.6s ease,
+                opacity 0.6s ease;
+}
+
+.portrait-item:hover img,
+.portrait-item:hover video{
+    transform: scale(1.04);
+    opacity: 0.9;
+}
+
+/* FADE ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* PORTRAIT CONTENT */
+
+/* =========================================
+   PORTRAIT HERO TEXT
+========================================= */
+
+/* =========================================
+   FINAL PORTRAIT HERO TEXT
+========================================= */
+
+.portrait-content{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    animation: fadeUp 1.2s ease;
+    padding: 20px;
+}
+
+/* TITLE */
+
+.portrait-content h1{
+
+    font-size: 95px;
+
+    margin-bottom: 10px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    letter-spacing: 10px;
+
+    font-weight: 600;
+
+    background: linear-gradient(
+        to right,
+        #f8e7c8,
+        #d4b483,
+        #fff3dc
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+    0 0 10px rgba(212,180,131,0.4),
+    0 0 30px rgba(212,180,131,0.2);
+}
+
+/* SUBTEXT */
+
+.portrait-content p{
+
+    max-width: 650px;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #ddd;
+
+    letter-spacing: 1px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .portrait-content h1{
+
+        font-size: 42px;
+
+        letter-spacing: 5px;
+    }
+
+    .portrait-content p{
+
+        font-size: 15px;
+    }
+
+}
+/* OVERLAY */
+
+.portrait-overlay{
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0,0,0,0.45);
+
+    z-index: 2;
+}
+
+/* HERO IMAGE */
+
+.portrait-hero-image{
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(70%);
+
+    transform: scale(1.03);
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+

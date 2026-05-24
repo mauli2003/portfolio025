@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>We Are Dogs | Sahil Cinematics</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SAHIL
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <!-- <a href="portfolio.html">Portfolio</a> -->
+             <div class="dropdown">
+
+    <a href="portfolio.html">Portfolio</a>
+
+    <ul class="dropdown-menu">
+
+        <li><a href="landscapes.html">Landscapes</a></li>
+
+        <li><a href="portraits.html">Portraits</a></li>
+
+        <li><a href="blackwhite.html">Black & White</a></li>
+
+        <li><a href="travel.html">Travel Films</a></li>
+
+        <li><a href="street.html">Street Stories</a></li>
+
+    </ul>
+
+    </div>
+
+            <a href="albums.html">Albums</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="project-hero">
+
+    <video autoplay muted loop playsinline
+class="hero-video no-pause">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639620/wrd8_mc9bmt.mp4"
+        type="video/mp4">
+
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="project-content">
+
+<span>Love Dogs</span>
+
+<h1>We Are Dogs</h1>
+
+<p>
+
+Where every frame speaks personality,
+warmth and love for dogs.
+
+</p>
+
+</div>
+</section>
+
+<section class="project-intro">
+
+    <span>
+        WE ARE DOGS
+    </span>
+
+    <h2>
+
+        Pet Brand
+        
+
+    </h2>
+
+    <p>
+
+            Emotional and playful storytelling
+            crafted to celebrate the bond,
+            energy and personality of dogs.
+
+    </p>
+
+</section>
+
+<section class="videos-section">
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639166/wrd2_ve4l6w.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639621/wrd7_k6u5sv.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639447/wrd4_lxniog.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639462/wrd5_slciyc.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639454/wrd6_muuffi.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639620/wrd8_mc9bmt.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639165/wrd3_sjsfvd.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639149/wrd1_gwc8cq.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CTA -->
+<!-- ========================= -->
+
+<section class="project-cta">
+
+    <h2>
+
+        Want Your Brand
+        To Feel Cinematic?
+
+    </h2>
+
+    <a href="contact.html">
+
+        Let’s Create Together
+
+    </a>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="socials">
+
+        <a href="https://instagram.com/sahiilllllllll"
+        target="_blank">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="https://linkedin.com/in/sahilpanchal"
+        target="_blank">
+
+            <i class="fab fa-linkedin-in"></i>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        © 2503 Sahil Cinematics
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+const videos = document.querySelectorAll(
+".videos-section video"
+);
+
+videos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+        videos.forEach((otherVideo) => {
+
+            if (otherVideo !== video) {
+
+                otherVideo.pause();
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

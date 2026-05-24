@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wrap Studio | Sahil Cinematics</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SAHIL
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <!-- <a href="portfolio.html">Portfolio</a> -->
+             <div class="dropdown">
+
+    <a href="portfolio.html">Portfolio</a>
+
+    <ul class="dropdown-menu">
+
+        <li><a href="landscapes.html">Landscapes</a></li>
+
+        <li><a href="portraits.html">Portraits</a></li>
+
+        <li><a href="blackwhite.html">Black & White</a></li>
+
+        <li><a href="travel.html">Travel Films</a></li>
+
+        <li><a href="street.html">Street Stories</a></li>
+
+    </ul>
+
+    </div>
+
+            <a href="albums.html">Albums</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="project-hero">
+
+    <video autoplay muted loop playsinline
+class="hero-video no-pause">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639154/wrapstudio2_qfnxpe.mp4"
+        type="video/mp4">
+
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="project-content">
+
+<span>HANDCRAFTED HAMPERS</span>
+
+<h1>Wrap Studio</h1>
+
+<p>
+
+Luxury packaging and beautifully curated
+gift experiences captured cinematically.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="project-intro">
+
+    <span>
+        CLIENT PROJECT
+    </span>
+
+    <h2>
+
+        HANDCRAFTED HAMPERS
+
+    </h2>
+
+    <p>
+
+            High-energy cinematic visuals
+            focused on automotive styling,
+            detailing and premium wraps.
+
+    </p>
+
+</section>
+
+<section class="videos-section">
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639154/wrapstudio2_qfnxpe.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639140/wrapstudio1_aeg7jj.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639662/wrap4_sxmhfw.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639191/wrap5_kk4bvv.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639354/wrap3_ba0eu1.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <div class="video-card">
+
+        <video controls>
+
+            <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639401/wrap6_ntlgmc.mp4"
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CTA -->
+<!-- ========================= -->
+
+<section class="project-cta">
+
+    <h2>
+
+        Want Your Brand
+        To Feel Cinematic?
+
+    </h2>
+
+    <a href="contact.html">
+
+        Let’s Create Together
+
+    </a>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="socials">
+
+        <a href="https://instagram.com/sahiilllllllll"
+        target="_blank">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="https://linkedin.com/in/sahilpanchal"
+        target="_blank">
+
+            <i class="fab fa-linkedin-in"></i>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        © 2503 Sahil Cinematics
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+const videos = document.querySelectorAll(
+".videos-section video"
+);
+
+videos.forEach((video) => {
+
+    video.addEventListener("play", () => {
+
+        videos.forEach((otherVideo) => {
+
+            if (otherVideo !== video) {
+
+                otherVideo.pause();
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

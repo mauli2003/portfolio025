@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now | Sahil Cinematics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">
+            SAHIL
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <div class="dropdown">
+
+    <a href="portfolio.html">Portfolio</a>
+
+    <ul class="dropdown-menu">
+
+        <li><a href="landscapes.html">Landscapes</a></li>
+
+        <li><a href="portraits.html">Portraits</a></li>
+
+        <li><a href="blackwhite.html">Black & White</a></li>
+
+        <li><a href="travel.html">Travel Films</a></li>
+
+        <li><a href="street.html">Street Stories</a></li>
+
+    </ul>
+
+    </div>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="albums.html">
+                    Albums
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    
+
+   
+ <section class="booking-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="booking-content">
+
+        <span>PREMIUM CINEMATIC EXPERIENCE</span>
+
+        <h1>
+            Book Your<br>
+            Dream Visual Story
+        </h1>
+
+        <p>
+            Luxury cinematic editing, storytelling and
+            unforgettable visual experiences crafted with emotion.
+        </p>
+
+        <a href="#packages" class="hero-btn">
+            Explore Packages
+        </a>
+
+    </div>
+
+</section>
+
+    
+
+    <!-- BOOKING PACKAGES -->
+
+    <section class="booking-section" id="packages">
+
+        <div class="package-grid">
+
+            <!-- BASIC -->
+
+            <div class="package-card">
+
+                <h2>Basic</h2>
+
+                <p class="price">
+                    ₹999
+                </p>
+
+                <ul>
+
+                    <li>Basic Editing</li>
+
+                    <li>Color Correction</li>
+
+                    <li>1 Day Delivery</li>
+
+                </ul>
+
+                <button onclick="showPayment('999')">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+            <!-- PREMIUM -->
+
+            <div class="package-card premium">
+
+                <h2>Premium</h2>
+
+                <p class="price">
+                    ₹2499
+                </p>
+
+                <ul>
+
+                    <li>Cinematic Editing</li>
+
+                    <li>Advanced Color Grading</li>
+
+                    <li>Motion Effects</li>
+
+                </ul>
+
+                <button onclick="showPayment('2499')">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+            <!-- LUXURY -->
+
+            <div class="package-card">
+
+                <h2>Luxury</h2>
+
+                <p class="price">
+                    ₹4999
+                </p>
+
+                <ul>
+
+                    <li>Luxury Cinematic Film</li>
+
+                    <li>Premium Storytelling</li>
+
+                    <li>Creative Direction</li>
+
+                </ul>
+
+                <button onclick="showPayment('4999')">
+
+                    Book Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PAYMENT SECTION -->
+
+        <div id="paymentBox">
+
+            <h2>
+
+                Complete Your Booking
+
+            </h2>
+
+            <p>
+
+                Scan QR or Pay Using UPI
+
+            </p>
+
+            <img
+            src="sam qr.jpeg"
+            class="qr-image"
+            >
+
+            <h3 class="upi-id">
+
+                8209266358@pthdfc
+
+            </h3>
+
+            <p id="paymentAmount"></p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+   <footer class="booking-footer">
+
+    <div class="footer-logo">
+        SAHIL CINEMATICS
+    </div>
+
+    <p>
+        Cinematic Storytelling Through Vision & Emotion
+    </p>
+
+    <div class="social-icons">
+
+        <a
+        href="https://instagram.com/sahiilllllllll"
+        target="_blank">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+        <a
+        href="https://linkedin.com/in/sahil-panchal"
+        target="_blank">
+
+            <i class="fa-brands fa-linkedin-in"></i>
+
+        </a>
+
+    </div>
+
+    <h4>
+        © 2503 Sahil Cinematics
+    </h4>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

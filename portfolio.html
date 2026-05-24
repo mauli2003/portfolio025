@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Sahil Cinematics</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="portfolio-page-body">
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            PORTFOLIO
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+
+            <div class="dropdown">
+
+                <a href="portfolio.html">Portfolio</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="landscapes.html">Landscapes</a></li>
+                    <li><a href="portraits.html">Portraits</a></li>
+                    <li><a href="blackwhite.html">Black & White</a></li>
+                    <li><a href="travel.html">Travel Films</a></li>
+                    <li><a href="street.html">Street Stories</a></li>
+                </ul>
+
+            </div>
+
+            <a href="albums.html">Albums</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="portfolio-hero">
+
+    <img src="portfolio front bg.jpeg" class="portfolio-bg">
+
+    <div class="portfolio-dark"></div>
+
+    <div class="portfolio-content">
+
+        <span>VISUAL STORYTELLING</span>
+
+        <h1>
+            Cinematic <br>
+            Creative Portfolio
+        </h1>
+
+        <p>
+            A curated collection of cinematic visuals,
+            emotional storytelling and artistic frames
+            crafted through motion and photography.
+        </p>
+
+        <a href="#portfolio-grid" class="portfolio-btn">
+            Explore Portfolio
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO CARDS -->
+
+<section class="portfolio-showcase" id="portfolio-grid">
+
+    <a href="landscapes.html" class="portfolio-item reveal">
+        <img src="landscapeframebg.jpg">
+        <div class="portfolio-item-overlay">
+            <h2>Landscapes</h2>
+        </div>
+    </a>
+
+    <a href="portraits.html" class="portfolio-item reveal">
+        <img src="portraaitframebg.jpg">
+        <div class="portfolio-item-overlay">
+            <h2>Portraits</h2>
+        </div>
+    </a>
+
+    <a href="travel.html" class="portfolio-item reveal">
+        <img src="IMG_0180.JPG.jpeg">
+        <div class="portfolio-item-overlay">
+            <h2>Travel Films</h2>
+        </div>
+    </a>
+
+    <a href="blackwhite.html" class="portfolio-item reveal">
+        <img src="balckandwhiteframebg.PNG">
+        <div class="portfolio-item-overlay">
+            <h2>Black & White</h2>
+        </div>
+    </a>
+
+    <a href="street.html" class="portfolio-item reveal">
+        <img src="streetframebg.jpg">
+        <div class="portfolio-item-overlay">
+            <h2>Street Stories</h2>
+        </div>
+    </a>
+
+</section>
+
+
+<footer>
+
+    <h3>SAHIL CINEMATICS</h3>
+
+    <p>
+        Cinematic Storytelling Through Vision & Emotion
+    </p>
+
+</footer>
+
+<!-- MUSIC BUTTON -->
+
+<button class="music-toggle" onclick="togglePortfolioMusic()">
+
+    <span id="musicIcon">♫</span>
+
+</button>
+
+<audio
+    id="portfolioMusic"
+    autoplay
+    loop
+    playsinline
+>
+    <source src="Ordinary.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
