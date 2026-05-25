@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sahil Cinematics</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+  <div class="logo">
+    SAHIL
+  </div>
+
+  <ul>
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="services.html">Services</a></li>
+
+    <li class="dropdown">
+
+    <a href="portfolio.html">Portfolio</a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+            <a href="landscapes.html">
+                Landscapes
+            </a>
+        </li>
+
+        <li>
+            <a href="portraits.html">
+                Portraits
+            </a>
+        </li>
+
+        <li>
+            <a href="blackwhite.html">
+                Black & White
+            </a>
+        </li>
+
+        <li>
+            <a href="travel.html">
+                Travel Films
+            </a>
+        </li>
+
+        <li>
+            <a href="street.html">
+                Street Stories
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+    <li><a href="albums.html">Albums</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+</nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <img src="home1bg.jpeg" class="hero-image">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <span>CINEMATIC STORYTELLING</span>
+
+      <h1>
+        Capturing Moments<br>
+        In A Unique Way
+      </h1>
+
+      <p>
+        Unraveling The Creative Vision
+      </p>
+
+      <div class="hero-buttons">
+
+    <a href="portfolio.html" class="btn">
+        Explore Portfolio
+    </a>
+
+    <a href="booking.html" class="btn-outline">
+        Book Now
+    </a>
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="section-header">
+
+      <span>SERVICES</span>
+
+      <h2>Creative Visual Services</h2>
+
+    </div>
+
+    <div class="services-container">
+
+      <div class="service-card">
+
+        <h3>Photo Editing</h3>
+
+        <p>
+          Cinematic retouching and luxury visual aesthetics
+          with storytelling color tones.
+        </p>
+
+        <button class="openModal" data-service="Photo Editing">
+    BOOK NOW
+</button>
+
+      </div>
+
+      <div class="service-card">
+
+        <h3>Video Editing</h3>
+
+        <p>
+          Smooth cinematic transitions, emotional cuts,
+          reels and storytelling edits.
+        </p>
+
+        <button class="openModal" data-service="Video Editing">
+    BOOK NOW
+</button>
+
+      </div>
+
+      <div class="service-card">
+
+        <h3>Cinematic Shooting</h3>
+
+        <p>
+          Premium visual shooting experience with
+          cinematic camera movement.
+        </p>
+
+        <button class="openModal" data-service="Cinematic Shooting">
+    BOOK NOW
+</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BOOKING MODAL -->
+
+<div class="modal" id="bookingModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2 id="serviceName">
+            Photo Editing
+        </h2>
+
+        <div class="package-grid">
+
+            <!-- BASIC -->
+
+            <div class="package-card">
+
+                <h3>Basic</h3>
+
+                <p>₹999</p>
+
+                <button onclick="showPayment('999')">
+                    Select
+                </button>
+
+            </div>
+
+            <!-- PREMIUM -->
+
+            <div class="package-card">
+
+                <h3>Premium</h3>
+
+                <p>₹2499</p>
+
+                <button onclick="showPayment('2499')">
+                    Select
+                </button>
+
+            </div>
+
+            <!-- LUXURY -->
+
+            <div class="package-card">
+
+                <h3>Luxury</h3>
+
+                <p>₹4999</p>
+
+                <button onclick="showPayment('4999')">
+                    Select
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PAYMENT BOX -->
+
+        <div id="paymentBox">
+
+            <h3>
+                Pay Using UPI
+            </h3>
+
+            <p class="upi-id">
+                8209266358@pthdfc
+            </p>
+
+            <img
+            src="sam qr.jpeg"
+            class="qr-image"
+            >
+
+            <p id="paymentAmount"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- FEATURED VIDEOS -->
+
+  <section class="featured-videos">
+
+    <div class="section-header">
+
+      <span>FEATURED WORK</span>
+
+      <h2>Cinematic Reels</h2>
+
+    </div>
+
+    <div class="video-container">
+
+      <video controls poster="f1bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/f_mp4/featured1_kzutmm" type="video/mp4">
+
+      </video>
+
+      <video controls poster="f2bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/f_mp4/featured2_gi3fpn" type="video/mp4">
+
+      </video>
+
+      <video controls poster="f3bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779640257/featured3_bqmj3v.mp4" type="video/mp4">
+
+      </video>
+
+      <video controls poster="f5bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639584/featured5_t5xrjc.mp4" type="video/mp4">
+
+      </video>
+
+      <video controls poster="f4bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639041/featured4_daoq3h.mp4" type="video/mp4">
+
+      </video>
+
+      <video controls poster="f6bg.PNG">
+
+        <source src="https://res.cloudinary.com/ykk6jj84/video/upload/v1779639683/featured6_xvns16.mp4" type="video/mp4">
+
+      </video>
+
+    </div>
+
+  </section>
+
+  <script>
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach(video => {
+    video.addEventListener("play", () => {
+      videos.forEach(otherVideo => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+</script>
+
+  <!-- PORTFOLIO -->
+<!-- 
+  <section class="portfolio" id="portfolio">
+
+    <div class="section-header">
+
+      <span>PORTFOLIO</span>
+
+      <h2>Creative Collections</h2>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+      <a href="landscapes.html" class="portfolio-box">
+
+        <img src="images/landscape.jpg">
+
+        <div class="portfolio-overlay">
+
+          <h3>Landscapes</h3>
+
+        </div>
+
+      </a>
+
+      <a href="travel.html" class="portfolio-box">
+
+        <img src="images/travel.jpg">
+
+        <div class="portfolio-overlay">
+
+          <h3>Travel Films</h3>
+
+        </div>
+
+      </a>
+
+      <a href="street.html" class="portfolio-box">
+
+        <img src="images/street.jpg">
+
+        <div class="portfolio-overlay">
+
+          <h3>Street Stories</h3>
+
+        </div>
+
+      </a>
+
+      <a href="bw.html" class="portfolio-box">
+
+        <img src="images/bw.jpg">
+
+        <div class="portfolio-overlay">
+
+          <h3>Black & White</h3>
+
+        </div>
+
+      </a>
+
+      <a href="portraits.html" class="portfolio-box">
+
+        <img src="images/portrait.jpg">
+
+        <div class="portfolio-overlay">
+
+          <h3>Portraits</h3>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </section> -->
+
+  <!-- CLIENT ALBUMS -->
+
+  <!-- <section class="albums" id="albums">
+
+    <div class="section-header">
+
+      <span>CLIENT ALBUMS</span>
+
+      <h2>Private Memories</h2>
+
+    </div>
+
+    <div class="album-container">
+
+      <div class="album-card">
+
+        <img src="images/client1.jpg">
+
+        <h3>Wedding Stories</h3>
+
+      </div>
+
+      <div class="album-card">
+
+        <img src="images/client2.jpg">
+
+        <h3>Travel Couple</h3>
+
+      </div>
+
+      <div class="album-card">
+
+        <img src="images/client3.jpg">
+
+        <h3>Commercial Brand</h3>
+
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- PRICING MODAL -->
+
+<div class="modal" id="pricingModal">
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2 id="serviceTitle"></h2>
+
+        <div class="pricing-box">
+
+            <div class="price-card">
+
+                <h3>Basic</h3>
+
+                <p>₹999</p>
+
+            </div>
+
+            <div class="price-card">
+
+                <h3>Premium</h3>
+
+                <p>₹2499</p>
+
+            </div>
+
+            <div class="price-card">
+
+                <h3>Luxury</h3>
+
+                <p>₹4999</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- ABOUT -->
+
+  <!-- <section class="about" id="about">
+
+    <div class="about-container">
+
+      <div class="about-image">
+
+        <img src="images/profile.jpg">
+
+      </div>
+
+      <div class="about-content">
+
+        <span>ABOUT ME</span>
+
+        <h2>
+          Telling Stories Through Visual Emotion
+        </h2>
+
+        <p>
+
+          I am a passionate cinematographer and visual storyteller
+          focused on creating emotional cinematic experiences.
+
+          Every frame is crafted with creativity, storytelling,
+          luxury aesthetics and timeless emotion.
+
+        </p>
+
+        <p>
+
+          From travel films to cinematic portraits and commercial
+          visuals, my goal is to transform moments into memories.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section> -->
+
+  <!-- GALLERY -->
+
+  <!-- <section class="gallery">
+
+    <div class="section-header">
+
+      <span>GALLERY</span>
+
+      <h2>Moments Frozen In Time</h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+      <img src="images/gallery1.jpg">
+
+      <img src="images/gallery2.jpg">
+
+      <img src="images/gallery3.jpg">
+
+      <img src="images/gallery4.jpg">
+
+      <img src="images/gallery5.jpg">
+
+      <img src="images/gallery6.jpg">
+
+    </div>
+
+  </section> -->
+
+  <!-- CONTACT -->
+
+  <!-- <section class="contact" id="contact">
+
+    <div class="section-header">
+
+      <span>CONTACT</span>
+
+      <h2>Let's Create Something Beautiful</h2>
+
+    </div>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name">
+
+      <input type="email" placeholder="Your Email">
+
+      <textarea placeholder="Tell Me About Your Project"></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </section> -->
+
+  <!-- FEATURED REELS SECTION -->
+<section class="featured">
+
+</section>
+
+<!-- WHATSAPP BUTTON -->
+
+<a
+href="https://wa.me/918209266358"
+class="whatsapp-float"
+target="_blank"
+>
+
+    WhatsApp
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+</footer>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>SAHIL CINEMATICS</h3>
+
+    <p>
+      Cinematic Storytelling Through Vision & Emotion
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
